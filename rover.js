@@ -65,7 +65,7 @@
     console.log(`A direção que ele está é ${rover.direction}`);
   };
 
-  function moveForward(rover,marte){
+  function moveForward(rover, marte){
     let tempox = rover.x;
     let tempoy = rover.y;
      switch(rover.direction){
@@ -100,7 +100,7 @@
     }
   };
 
-  function movetras(rover){
+  function movetras(rover, marte){
     let tempox = rover.x;
     let tempoy = rover.y;
         switch(rover.direction){
@@ -153,7 +153,7 @@
             turnRight(rover);
             break;
           case "b":
-            movetras(rover);
+            movetras(rover, morando);
             break;    
       }
     }else{
@@ -161,10 +161,13 @@
     }
   }
 }
-//commands(roverando,"rffrfflfrff");
+
+//commands(nome do rover, "comandos")
+// Rovers: roverando e roverando2
 commands(roverando,"r");
 commands(roverando2,"f");
 console.log(morando);
+//commands(roverando,"rffrfflfrff");
 //commands(roverando,"f");
 //moveForward(roverando);
 //console.log(roverando.travelLog);
