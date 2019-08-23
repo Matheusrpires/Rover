@@ -1,3 +1,4 @@
+
   let roverando  = {
     name: "br",
     direction: "N",
@@ -82,7 +83,7 @@
         tempox +=1;
         break;
       }
-      if(marte[tempox][tempoy] == null){
+      if(marte[tempox][tempoy] == 0){
         console.log("Ta livre para se mover")
         marte[tempox][tempoy] = rover.name;
         
@@ -117,7 +118,7 @@
             tempoy-=1;
             break;
        }
-       if(marte[tempox][tempoy] == null){
+       if(marte[tempox][tempoy] == 0){
         console.log("Ta livre para se mover")
         marte[tempox][tempoy] = rover.name;
 
@@ -164,11 +165,11 @@
 
 //commands(nome do rover, "comandos")
 // Rovers: roverando e roverando2
-commands(roverando,"r");
+//commands(roverando,"r");
 commands(roverando2,"f");
+commands(roverando,"rffrfflfrff");
 console.log(morando);
-//commands(roverando,"rffrfflfrff");
-//commands(roverando,"f");
-//moveForward(roverando);
-//console.log(roverando.travelLog);
-//console.log(roverando.direction);
+console.log(roverando.travelLog);
+
+
+
